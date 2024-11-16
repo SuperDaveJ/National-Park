@@ -1,0 +1,143 @@
+/*********** C2 Grid System ************/
+
+/*****  SECTIONS  *****/
+.section {
+	clear: both;
+	padding: 0;
+	
+}
+header .section {
+	margin: 0 4.8%;
+}
+.sectionpop{
+	clear: both;
+	padding: 0;
+	margin: 0 1%;
+}
+/*****  GROUPING   *****/
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+.group:after {
+    clear: both;
+}
+.group {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/*****  GRID COLUMN SETUP  *****/
+.col {
+	position: relative;
+	display: block;
+	float: left;
+	margin: 0% 0 0.5% 1.6%;
+}
+.col1 {
+	position: relative;
+	display: block;
+	float: left;
+	margin: 0.5% 0 0.5% 0;
+}
+.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+
+/*****  GRID OF SIX  *****/
+.span_6_of_6 { width: 100%; }
+.span_5_of_6 { width: 83.06%; }
+.span_5_of_6.f_right{
+float:right;
+} 
+.span_4_of_6 { width: 66.13%; }
+.span_3_of_6 { width: 49.2%; }
+.span_2_of_6 { width: 32.26%; }
+.span_1_of_6 { width: 15.33%; }
+
+ul.allBtn *
+{
+	box-sizing: border-box !important;
+	-webkit-box-sizing: border-box !important;
+	-moz-box-sizing: border-box !important;
+	-ms-box-sizing: border-box !important;
+}
+
+ul.allBtn {
+	list-style: none !important;
+	width: 90%;
+	padding: 0; text-align:center;
+	margin: 0 auto;
+}
+ul.allBtn > li div.name {
+	background: #2d5488;
+	width: 100%;
+	height: 44px;
+	line-height: 44px;
+	color: #fff;
+	font-weight: bold;
+	padding-left: 40px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+	display: inline-block;
+	/*behavior: url(../styles/PIE.htc); -- this causes problems */
+}
+
+ul.allBtn > li div.name a {
+	
+	cursor: pointer;color: #fff; text-decoration:none;
+}
+
+ul.allBtn > li div.name:hover {
+	background: #46aa3b;
+	cursor: pointer;
+}
+ul.allBtn > li div.namevv {
+background: #46aa3b;
+	width: 100%;
+	height: 44px;
+	line-height: 44px;
+	color: #fff;
+	font-weight: bold;
+	padding-left: 40px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+	display: inline-block; text-decoration:none;
+}
+ul.allBtn > li div.namevisited a{color: #fff;}
+ul.allBtn > li div.hand-icon {
+	float:right;
+	background-image:url(../sysimages/hand_icon.png);
+	float: right;
+	width: 25px;
+	height: 26px;
+	cursor: pointer; margin:1% 1% 0 0;
+}
+ul.allBtn > li div.check-icon {
+	float:left;
+	background-image:url(../sysimages/hand_icon.png);
+	float: right;
+	width: 25px;
+	height: 26px;
+	cursor: pointer; margin:1% 1% 0 0;
+	display:none;
+}
+ul.allBtn > li div.tick-icon {
+	float:left;
+	background-image:url(../sysimages/hand_icon.png);
+	float: right;
+	width: 25px;
+	height: 26px;
+	cursor: pointer; margin:1% 1% 0 0;
+	display:none;
+}
+#iconImg { margin-right: 0.1em; }
+#iconText { margin-top: 1.5em; }
+#iconText span{ font-size:1.5em; font-weight:bold; color:#2D5488;}
+
+.tab_box_main:before{}
+
+
+

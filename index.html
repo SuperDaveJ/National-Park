@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>NPS</title>
+
+<script type="text/JavaScript" src="scripts/APIWrapper.js"></script>
+<script type="text/JavaScript" src="scripts/SCOFunctions.js"></script>
+<script type="text/JavaScript" src="scripts/nps_scorm.js"></script>
+
+<script type="text/JavaScript">
+<!--
+	initializeCourse();
+	var closing = false;
+	//bookmarking
+	if (bookmark != "") {
+	  	if (confirm("Do you wish to resume where you left?")==true) {
+		  	window.location.href = bookmark;
+	  	} else {
+			window.location.href = 'coursemenu.html';
+		}
+	} else {
+		window.location.href = 'coursemenu.html';
+	}
+
+//-->
+</script>
+
+</head>
+
+<body onUnload="if (closing) exitCourse(false)">
+</body>
+</html>

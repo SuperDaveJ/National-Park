@@ -1,0 +1,194 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"><!-- InstanceBegin template="/Templates/nps_base.dwt" codeOutsideHTMLIsLocked="true" --> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+
+<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!-- Responsive and mobile friendly stuff -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+<link href="../styles/normalize.css" rel="stylesheet" media="screen, projection">
+<link href="../styles/nps_grid.css" rel="stylesheet" media="screen, projection">
+<link href="../styles/nps.css" rel="stylesheet" media="screen, projection">
+<!--[if lt IE 9]>
+<script src="../scripts/html5shiv-min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../scripts/APIWrapper.js"></script>
+<script type="text/javascript" src="../scripts/SCOFunctions.js"></script>
+<script type="text/javascript" src="../scripts/nps_scorm.js"></script>
+<script type="text/javascript" src="../scripts/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="../scripts/nps_content.js"></script>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>NPS</title>
+<!-- InstanceEndEditable -->
+
+<!-- InstanceBeginEditable name="head" -->
+<script type="text/javascript">
+    nextURL = "../coursemenu1.html";
+    backURL = "nps040.html";
+	
+	promptText = "Complete the question; then select Next to continue.";
+	pgNumText = "Page 5 of 5";
+
+var widthTable = 100;	//table width	
+var nItems = 5;
+var ansCorrect = "B"
+
+var optionValue=["Director&#39;s Order 36","Reference Manual 36","OMB Circular A-45","Housing Management Plan (HMP)","Internet Quarters Management Information System  (iQMIS)"];
+distracters = new Array(nItems);
+distracters[0] = "addresses both the administrative and facility-management aspects of the Housing Management Program";
+
+distracters[1] = "serves as a park's housing framework and strategy to guide the park's housing program";
+
+distracters[2] = "is used to calculate and adjust tenant rents.";
+
+distracters[3] = "establishes rental rates and other charges for Government Quarters";
+
+distracters[4] = "provides guidance for administering and managing NPS employee housing";
+
+fdbkIncorrect = "<p>Incorrect. Please try again.</p>";
+
+fdbkpartialIncorrect = "<p>Some, but not all of your answers are correct. Please try again.</p>";
+ 
+var fdbkCorrect = "<p>Correct!</p> <p>Select <b>Next</b> to continue.</p>"
+
+var fdbkFinalIncorrect  = "<p>Incorrect. The correct answers are displayed above.</p><p>Select <b>Next</b> to continue.</p>"
+</script>
+
+<script type="text/javascript" src="../scripts/DropDown.js"></script>
+<!-- InstanceEndEditable -->
+<style>
+table {
+   
+    border-spacing: 0;
+}
+.dropdownTxt{
+margin-right:10px;
+width:50%;
+background: #c6dbc6;padding-left:1%;
+
+}
+.dropdown{width:47%;
+margin-top:10px;
+height:45px;
+background: #d4e8d4;padding-left:1%;
+}
+
+
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+    
+<!-- horizontal menu -->
+<div class="section group menu_bg" >
+  <div class="col span_4_of_6 takeUp6Col" style=""><header id="pageHeader" role="banner">
+  <nav id="mainNav_H" role="navigation" name="mainNav_H">
+    <div id="menuHolder_H">
+    <a id="courseMenu_H" class="menuItem_H" href="courseMenu.html" title="Main Menu" alt="Main Menu" tabindex="1">Menu</a>
+    <div id="bar1" class="divider">|</div>
+    <a id="help_H" class="menuItem_H" href="#" title="Help" tabindex="2">Help</a> 
+	 <div id="bar2" class="divider">|</div>
+    <a id="resources_H" class="menuItem_H" href="resources.html" title="Resources" tabindex="3">Resources</a> 
+    <div id="bar3" class="divider">|</div>
+	 <a id="glossary_H" class="menuItem_H" href="#" title="Glossary" tabindex="4">Glossary</a> 
+    <div id="bar5" class="divider">|</div>
+    <a id="exit_H" class="menuItem_H last-child" href="#" title="Exit" tabindex="5">Exit</a>
+    </div>
+  </nav>
+  </div>
+  <!-- Next, Back, and Replay -->
+   <div class="col span_2_of_6 takeUp6Col arrowsBar">
+  <nav id="arrows" role="navigation">
+    <div id="arrowsHolder">
+    <a id="back" class="menuItem_H" href="#" title="Back" tabindex="9"><img id="imgBack" src="../sysimages/arrow_back.png" style="vertical-align:middle;" /> Back</a>
+    <div id="bar4" class="divider">|</div>
+    <a id="next" class="menuItem_H" href="#" title="Next" tabindex="10">Next <img id="imgNext" src="../sysimages/arrow_next.png" style="vertical-align:middle;" /></a>
+    </div></header>
+  </nav>
+  </div>
+ <!-- End of Next, Back, and Replay -->
+</div>
+
+<!-- end of horizontal menu -->
+
+<!-- page title and content start here -->
+<div id="contentArea">
+
+  
+  <div class="section group " >
+  <div class="header_left">
+<h1 class="courseTitle">NPS Business Principles and Practices Fundamentals</h1>
+  	<h2 class="lessonTitle">Lesson 1: Introduction to Housing Management</h2>
+  </div>
+  <div class="header_right"><img src="../sysimages/logonps.png" alt="NPS Logo" title="NPS Logo"/></div>
+  </div>
+    <div class="section group">
+  <div class="content_left">
+    <!-- Top  page number -->
+
+    <div class="section group" >
+	 <div class="col span_4_of_6 heading" >
+	  <h4 >Learning Check</h4>
+	</div>
+  <div class="col span_2_of_6">
+         	<p class="pgNum">Page 1 of 14</p>
+        </div></div>
+
+<!-- InstanceBeginEditable name="PageContent" -->
+<!-- 100% width -->
+<div class="section group">
+  <div class="col span_6_of_6" style="height:410px;">
+    <div class="alignLeft">
+    <p>Let's take a few moments to check your understanding of the learning so far. Select each item from the drop-down list to match the description on the right. Select Submit when you are done.</p>
+	
+    <form name="qForm" id="qForm" tabindex="6">
+    </form>
+    </div>
+  </div>
+   <!-- Bottom prompt -->
+  
+    <div id="promptOnBottom" class="section group">
+        <div class="span_6_of_6">
+  			<p class="prompt">Select Next to Continue.</p>
+        </div>
+       
+    </div>
+</div>
+
+<!-- InstanceEndEditable -->
+    
+
+  </div>
+  <div class="content_right"></div>
+  </div>
+
+
+ 
+
+
+
+</div><!-- End of contentArea -->
+
+</div><!-- End of wrapper -->
+
+
+<script src="../scripts/imgSizer.js"></script>
+<script src="../scripts/modernizr.custom.2.6.2-min.js"></script>
+<script>
+Modernizr.load(
+{
+	// test for media query support, if not load respond.js
+    test : Modernizr.mq('only all'),
+    // If not, load the respond.js file
+    nope : '../scripts/respond.min.js' 
+}); 
+</script>
+</body>
+<!-- InstanceEnd --></html>

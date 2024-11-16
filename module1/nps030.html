@@ -1,0 +1,270 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"><!-- InstanceBegin template="/Templates/nps_base.dwt" codeOutsideHTMLIsLocked="true" --> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+
+<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!-- Responsive and mobile friendly stuff -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+<link href="../styles/normalize.css" rel="stylesheet" media="screen, projection">
+<link href="../styles/nps_grid.css" rel="stylesheet" media="screen, projection">
+<link href="../styles/nps.css" rel="stylesheet" media="screen, projection">
+<link href="../styles/jplayer_nps.css" rel="stylesheet" type="text/css" />
+<!--[if lt IE 9]>
+<script src="../scripts/html5shiv-min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../scripts/APIWrapper.js"></script>
+<script type="text/javascript" src="../scripts/SCOFunctions.js"></script>
+<script type="text/javascript" src="../scripts/nps_scorm.js"></script>
+<script type="text/javascript" src="../scripts/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="../scripts/jquery.jplayer.js"></script>
+<script type="text/javascript" src="../scripts/nps_content.js"></script>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>NPS</title>
+<!-- InstanceEndEditable -->
+
+<!-- InstanceBeginEditable name="head" -->
+<script type="text/javascript">
+    nextURL = "nps040.html";
+    backURL = "nps020.html";
+	
+	promptText = "Select each tab; then select Next to continue.";
+	pgNumText = "Page 3 of 5";
+	
+	var totaltopic = 5
+function showblock(page) {
+		for (i=1; i<=totaltopic; i++) {
+		var e= eval("document.getElementById('para"+i+"')");
+		var g;
+		e.style.display="none";
+		$("#img"+i).css("cursor","pointer");
+		if (i>1) {
+			g= eval("document.getElementById('img"+i+"')");
+		//alert(g)
+		 g.src = "images/nps01_0109bt"+(i-1)+"_0.png" 
+		}
+  	}
+	$("#img"+page).css("cursor","default");
+  	e = eval("document.getElementById('para"+page+"')"); 
+	var g;
+	g = eval("document.getElementById('img"+page+"')");
+	if (e) e.style.display="block";
+	if (g) g.src = "images/nps01_0109bt"+(page-1)+"_2.png"
+	}
+	
+</script>
+<style>
+
+.table1 tr td{
+ text-align:center;
+ margin:0px;
+ padding:5px;}
+
+.table2 tr td{
+ text-align:center;
+ margin:0px;
+ padding:5px;}
+</style>
+
+
+<!-- InstanceEndEditable -->
+
+</head>
+
+<body>
+<div id="wrapper">
+    
+<!-- horizontal menu -->
+<div class="section group menu_bg" >
+  <div class="col span_4_of_6 takeUp6Col" style=""><header id="pageHeader" role="banner">
+  <nav id="mainNav_H" role="navigation" name="mainNav_H">
+    <div id="menuHolder_H">
+    <a id="courseMenu_H" class="menuItem_H" href="courseMenu.html" title="Main Menu" alt="Main Menu" tabindex="1">Menu</a>
+    <div id="bar1" class="divider">|</div>
+    <a id="help_H" class="menuItem_H" href="#" title="Help" tabindex="2">Help</a> 
+	 <div id="bar2" class="divider">|</div>
+    <a id="resources_H" class="menuItem_H" href="resources.html" title="Resources"tabindex="3">Resources</a> 
+    <div id="bar3" class="divider">|</div>
+	 <a id="glossary_H" class="menuItem_H" href="#" title="Glossary" tabindex="4">Glossary</a> 
+    <div id="bar5" class="divider">|</div>
+    <a id="exit_H" class="menuItem_H last-child" href="#" title="Exit" tabindex="5">Exit</a>
+    </div>
+  </nav>
+  </div>
+  <!-- Next, Back, and Replay -->
+   <div class="col span_2_of_6 takeUp6Col arrowsBar">
+  <nav id="arrows" role="navigation">
+    <div id="arrowsHolder">
+    <a id="back" class="menuItem_H" href="#" title="Back" ><img id="imgBack" src="../sysimages/arrow_back.png" style="vertical-align:middle;" /> Back</a>
+    <div id="bar4" class="divider">|</div>
+    <a id="next" class="menuItem_H" href="#" title="Next" >Next <img id="imgNext" src="../sysimages/arrow_next.png" style="vertical-align:middle;" /></a>
+    </div></header>
+  </nav>
+  </div>
+ <!-- End of Next, Back, and Replay -->
+</div>
+
+<!-- end of horizontal menu -->
+
+<!-- page title and content start here -->
+<div id="contentArea">
+
+  
+  <div class="section group " >
+  <div class="header_left">
+<h1 class="courseTitle">NPS Business Principles and Practices Fundamentals</h1>
+  	<h2 class="lessonTitle">Lesson 1: Introduction to Housing Management</h2>
+  </div>
+  <div class="header_right"><img src="../sysimages/logonps.png" alt="NPS Logo" title="NPS Logo"/></div>
+  </div>
+    <div class="section group">
+  <div class="content_left">
+    <!-- Top  page number -->
+
+    <div class="section group" >
+	 <div class="col span_4_of_6 heading">
+	  <h4 >Internet Quarters Management Information System (iQMIS) for Records Management</h4>
+	</div>
+  <div class="col span_2_of_6">
+         	<p class="pgNum">Page 1 of 14</p>
+        </div></div>
+
+<!-- InstanceBeginEditable name="PageContent" -->
+<div class="section group">
+  <div class="col span_6_of_6" style="height:410px;" >
+<p>The iQMIS is an automated inventory of government housing. Select each numbered tab below to learn more.</p>
+
+ <table width="670" border="0" cellspacing="0" cellpadding="0" style="margin-left:120px;"> 
+  <tr>
+    <td height="290" align="left" valign="top" style="background-color:#ffffff;">
+    
+   <div id="para1" style="display:block;border:0;font:inherit;vertical-align:middle;margin:0;padding:0px 0 0 0;">
+    <!--<p align="center"><img style="padding:34px 0 0 0; " src="images/nps01_02090.png" alt="Photo of an alert originator creating a WEA. " title="Photo of an alert originator creating a WEA. " width="408" height="271"</p>-->
+</div>
+  <div id="para2" style="display: none;height: 245px ;margin-top: 20px; padding: 0px 1% 10px 3%; width:96%;" tabindex="9" >
+  <div style="width:50%; float:left;"><img  src="images/nps01_01090_01.jpg" alt="Collage of the Department of Interior seal and a businessman inputting data in a software system." title="Collage of the Department of Interior seal and a businessman inputting data in a software system." width="318" height="291"></div>
+  <div style="width:48%; float:left;height: 281px; padding-left:2%; "><p><strong>Ownership and Design</strong></p>
+  <ul>
+  <li>It is owned by the Department of the Interior and administered through the Quarters Management Information System (QMIS) Office in Denver, Colorado.</li><li>It is designed to keep records on each housing structure to include, but not limited to, location, structural features, amenities and services, and tenant history.
+</li>
+  </ul>
+    </div>
+    </div>
+    <div id="para3" style="display: none;height: 245px ;margin-top: 20px; padding: 0px 1% 10px 3%; width:96%;" tabindex="11" >
+  <div style="width:50%; float:left;"><img  src="images/nps01_0109002.jpg" alt="A businesswoman studying a spreadsheet on a desktop monitor." title="A businesswoman studying a spreadsheet on a desktop monitor." width="318" height="291"></div>
+  <div style="width:48%; float:left; height: 281px; padding-left:2%; overflow-y:scroll"><p><strong>Use</strong></p>
+    <p>It is maintained by house number and its uses include, but are not limited to:</p>
+	 <ul>
+  <li>Monthly Rental & Adjustment Calculation</li>
+<li>Notice of Rental Adjustment</li>
+<li>Housing Assignment Agreement</li>
+<li>Certificate of Required Occupancy</li>
+<li>Excessive Heating/Cooling Agreement</li>
+<li>Request for Bi-weekly Quarters Deductions</li>
+<li>Quarters Inventory</li>
+<li>Employee Check In/Out Form</li>
+<li>Lead-Based Paint Disclosure</li>
+
+  </ul>
+	
+	
+	</div>
+  
+  </div>
+    <div id="para4" style="display: none;height: 245px ;margin-top: 20px; padding: 0px 1% 10px 3%; width:96%;" tabindex="13" >
+  <div style="width:50%; float:left;"><img  src="images/nps01_01090_03.jpg" alt="A businesswoman performing calculations at her desk." title="A businesswoman performing calculations at her desk." width="318" height="291"></div>
+  <div style="width:48%; float:left; height: 281px; padding-left:2%; "><p><strong>Calculating and Adjusting Rent</strong></p>
+    <p>iQMIS is used to calculate and adjust tenant rents. Each year in March the Consumer Price Index (CPI) is applied to the current rent. <br>
+	 <ul>
+  <li>Updates are provided via memorandum and posted on the web-site.</li>
+<li>QMIS will calculate adjustments related to the CPI and survey results when applicable. </li></ul>
+</p>
+
+</div>
+  
+  </div>
+    <div id="para5" style="display: none;height: 245px ;margin-top: 20px; padding: 0px 1% 10px 3%; width:96%;" tabindex="15" >
+  <div style="width:50%; float:left;"><img  src="images/nps01_01090_04.jpg" alt="More information" title="More information" width="318" height="291"></div>
+  <div style="width:48%; float:left; height: 281px; padding-left:2%; word-wrap:break-word  ">
+  <p><strong>More Information</strong></p>
+    <p>Select this link to find more information on iQMIS:  <a tabindex="18" href="http://www.doi.gov/ibc/servcies/finance/quarters/iQMIS.cfm" target="_blank" tabindex="16">http://www.doi.gov/ibc/servcies/finance/quarters/iQMIS.cfm</a></p></div>
+  
+  </div>
+
+</td>
+  </tr>
+   <tr >
+    <td style=" background: url(images/nps01_0108.png) top repeat-x;" >
+	<div style=" background: url(images/nps01_0108a.png) top repeat-x;width:70%; margin:0 15% 0 14%;height:50px;">
+	<div style="float:left;width:30.5%;">
+	<a href="javascript:showblock(2);"  tabindex="8" alt="1. Collage of the Department of Interior seal and a businessman inputting data in a software system." title="1. Collage of the Department of Interior seal and a businessman inputting data in a software system.">	
+	<img src="images/nps01_0109bt1_0.png"  alt="1. Collage of the Department of Interior seal and a businessman inputting data in a software system."  name="img2"  id="img2" title="1. Collage of the Department of Interior seal and a businessman inputting data in a software system." border="0" />
+	</a> 
+	</div>
+	<div style=" float:left;width:30.5%;text-align:left;">
+	<a href="javascript:showblock(3);" tabindex="10" alt="2. A businesswoman studying a spreadsheet on a desktop monitor." title="2. A businesswoman studying a spreadsheet on a desktop monitor.">	
+	<img src="images/nps01_0109bt2_0.png"  alt="2. A businesswoman studying a spreadsheet on a desktop monitor."  name="img3"  id="img3" title="2. A businesswoman studying a spreadsheet on a desktop monitor." border="0" />
+	</a> </div>
+	<div style=" float:left;width:30.5%;text-align:left">
+	<a href="javascript:showblock(4);"  tabindex="12" alt="3. A businesswoman performing calculations at her desk." title="3. A businesswoman performing calculations at her desk.">	
+	<img src="images/nps01_0109bt3_0.png"  alt="3. A businesswoman performing calculations at her desk."   name="img4"  id="img4"  title="3. A businesswoman performing calculations at her desk." border="0" />
+	</a> </div>
+    
+	<div style=" float:left;width:8.5%;text-align:left"><a href="javascript:showblock(5);"  tabindex="14" alt="4.More information" title="4.More information">	
+	<img src="images/nps01_0109bt4_0.png"    name="img5"  id="img5" alt="4. More information" title="4. More information" border="0" /></a>
+	</div>
+	</div>
+	</td>
+  </tr>
+</table>
+  </div>
+  <!-- Bottom prompt -->
+  
+    <div id="promptOnBottom" class="section group">
+        <div class="span_6_of_6">
+  			<p class="prompt">Select Next to Continue.</p>
+        </div>
+       
+    </div>
+</div>
+
+<!-- InstanceEndEditable -->
+    
+
+  </div>
+  <div class="content_right"></div>
+  </div>
+   
+
+
+<!-- 100% width -->
+
+  
+
+
+
+</div><!-- End of contentArea -->
+
+</div><!-- End of wrapper -->
+
+
+<script src="../scripts/imgSizer.js"></script>
+<script src="../scripts/modernizr.custom.2.6.2-min.js"></script>
+<script>
+Modernizr.load(
+{
+	// test for media query support, if not load respond.js
+    test : Modernizr.mq('only all'),
+    // If not, load the respond.js file
+    nope : '../scripts/respond.min.js' 
+}); 
+showblock(2);
+</script>
+</body>
+<!-- InstanceEnd --></html>

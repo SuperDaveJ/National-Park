@@ -1,0 +1,29 @@
+/*********** C2 Page Specific Grid System ************/
+
+/*****  GRID OF SIX  *****/
+.span_6_of_6 { width: 100%; }
+.span_5_of_6 { width: 83.06%; }
+.span_4_of_6 { width: 66.13%; }
+.span_3_of_6 { width: 49.2%; }
+.span_2_of_6 { width: 32.26%; }
+.span_1_of_6 { width: 15.33%; }
+
+@media only screen and (max-width: 768px) {
+/* This is actually a 4-column grid system with 15px gutter */
+.span_6_of_6 { width: 100%; }
+.span_5_of_6 { width: 100%; }
+.span_4_of_6 { width: 100%; }
+.span_3_of_6 { width: 74.609375%; }
+.span_2_of_6 { width: 49.21875%; }
+.span_1_of_6 { width: 23.828125%; }
+}
+
+@media only screen and (max-width: 480px) {
+/* This is actually a 2-column grid system with 20px gutter */
+.span_6_of_6 { width: 100%; }
+.span_5_of_6 { width: 100%; }
+.span_4_of_6 { width: 100%; }
+.span_3_of_6 { width: 100%; }
+.span_2_of_6 { width: 100%; }
+.span_1_of_6 { width: 49.0%; }
+}

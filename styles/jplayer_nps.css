@@ -1,0 +1,171 @@
+/*
+ * Skin for jPlayer Plugin (jQuery JavaScript Library)
+ * This is for PCORI course, November 2013
+ */
+div.jp-audio 
+{
+    background: #fff url(../sysimages/audio_controller.jpg) no-repeat;
+	position: relative;
+	width: 297px;
+	height: 52px;
+    margin: .2em auto;
+}
+div.jp-interface {
+	position: relative;
+	width:100%;
+	height:52px;
+}
+
+div.jp-interface ul.jp-controls {
+	list-style-type:none;
+	margin:0;
+	padding: 0;
+	overflow:hidden;
+}
+
+div.jp-audio ul.jp-controls {
+	position: absolute;
+	left: 101px;
+	width: 196px;
+	padding:0;
+}
+
+div.jp-interface ul.jp-controls li {
+	display:inline;
+	float: left;
+}
+
+div.jp-interface ul.jp-controls a {
+	display:block;
+	overflow:hidden;
+	text-indent:-9999px;
+}
+a.jp-play,
+a.jp-pause {
+	width:55px;
+	height:52px;
+	/*cursor:default;*/
+}
+a.jp-play1,
+a.jp-pause1,a.jp-play2,
+a.jp-pause2,a.jp-play3,
+a.jp-pause3{
+	width:55px;
+	height:52px;
+	/*cursor:default;*/
+}
+a.jp-stop {
+	width:52px;
+	height:52px;
+	/*cursor:default;*/
+}
+a.jp-cc {
+	width:89px;
+	height:52px;
+	
+}
+
+a.jp-play {
+	background: url("../sysimages/audio_play0.jpg");
+	display: none;
+}
+a.jp-play:hover {
+	background: url("../sysimages/audio_play2.jpg");
+}
+a.jp-pause {
+	background: url("../sysimages/audio_pause0.jpg");
+	display: none;
+}
+a.jp-pause:hover {
+	background: url("../sysimages/audio_pause2.jpg");
+}
+
+a.jp-play1 {
+	background: url("../sysimages/audio_play0.jpg");
+	display: none;
+}
+a.jp-play1:hover {
+	background: url("../sysimages/audio_play2.jpg");
+}
+a.jp-pause1 {
+	background: url("../sysimages/audio_pause0.jpg");
+	display: none;
+}
+a.jp-pause1:hover {
+	background: url("../sysimages/audio_pause2.jpg");
+}
+
+a.jp-play2 {
+	background: url("../sysimages/audio_play0.jpg");
+	display: none;
+}
+a.jp-play2:hover {
+	background: url("../sysimages/audio_play2.jpg");
+}
+a.jp-pause2 {
+	background: url("../sysimages/audio_pause0.jpg");
+	display: none;
+}
+a.jp-pause2:hover {
+	background: url("../sysimages/audio_pause2.jpg");
+}
+
+a.jp-play3 {
+	background: url("../sysimages/audio_play0.jpg");
+	display: none;
+}
+a.jp-play3:hover {
+	background: url("../sysimages/audio_play2.jpg");
+}
+a.jp-pause3 {
+	background: url("../sysimages/audio_pause0.jpg");
+	display: none;
+}
+a.jp-pause3:hover {
+	background: url("../sysimages/audio_pause2.jpg");
+}
+
+a.jp-stop {
+	background: url("../sysimages/audio_replay0.jpg");
+}
+
+a.jp-stop:hover {
+	background: url("../sysimages/audio_replay2.jpg");
+}
+a.jp-cc {
+	background: url("../sysimages/audio_cc0.jpg");
+}
+
+a.jp-cc:hover {
+	background: url("../sysimages/audio_cc2.jpg");
+}
+
+/* @group NO SOLUTION error feedback */
+
+.jp-no-solution {
+	position:absolute;
+	width:390px;
+	margin-left:-202px;
+	left:50%;
+	top: 10px;
+
+	padding:5px;
+	font-size:.8em;
+	background-color:#eee;
+	border:2px solid #009be3;
+	color:#000;
+	display:none;
+}
+
+.jp-no-solution a {
+	color:#000;
+}
+
+.jp-no-solution span {
+	font-size:1em;
+	display:block;
+	text-align:center;
+	font-weight:bold;
+}
+
+/* @end */

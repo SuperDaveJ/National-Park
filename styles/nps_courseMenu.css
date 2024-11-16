@@ -1,0 +1,252 @@
+/***** Global Styles *****/
+html, body, div, section, article, header, footer, nav, h1, h2, h3, h4, p, blockquote, span, em, strong, img, ol, ul, li, figure, video, th, td, tr, a {
+	margin: 0; 
+	padding: 0;
+}
+.col { 
+	height: auto;
+	margin: 0.5em 0; 
+}
+
+body {
+	background: #1a300f url('../sysimages/tile_mm.jpg') top left repeat-x;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	font-weight: normal;
+	font-style: normal;
+	color: #000;
+}
+#wrapper {
+	position: relative;
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	height: auto;
+}
+#contentHolder {
+	clear: both;
+	position: relative;
+	top: 2.2em;
+	width: 93.75%;	/* 960px at maximum size (1024px) */
+	height: auto;
+	text-align: center;
+	margin: 0 auto;
+}
+#topLogo {
+	position: relative;
+	top: 0.5em;
+	left: 1.5em;
+	width: 90%;
+	float: left;
+}
+
+h1.courseTitle {
+	width: 500px;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #fff;
+	margin: 0.5em auto;
+	margin-bottom: 1.5em;
+}
+
+img {
+	border : 0;
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* ie8 */
+}
+
+#menuHolder {
+	position: relative;
+	width: 450px;
+	height: 200px;
+	margin: 0 auto;
+}
+.checkmark {
+	left: 0px; 
+	z-index: 99;
+	position:absolute;
+}
+
+.modTitle {
+    display: inline-block;
+    height: auto;
+    position: relative;
+    text-align: left;
+    width: 90%;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+
+
+#exit {
+    margin:2% 0% 0% 0%;
+	text-align: center;
+}
+.button_align{
+	margin:0 auto;
+}
+.chkHolder1 {   bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 90%;
+    top: 0; }
+.button_align1 {
+    float: left;
+    text-align: right;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	width:65%;
+	margin-left:15%;
+}
+/***** Button Style.  Do NOT Change *****/
+.button {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em/100%;
+    font-weight: bold;
+	padding:0.8em;
+    /*padding: .5em 2em .55em;*/
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    -webkit-border-radius: .5em; 
+    -moz-border-radius: .5em;
+    border-radius: .5em;
+    -webkit-box-shadow: 0 3px 3px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 3px 3px rgba(0,0,0,.3);
+    box-shadow: 0 3px 3px rgba(0,0,0,.3);
+	
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+}
+.button:hover {
+    text-decoration: none;
+}
+.button:active {
+    position: relative;
+    top: 1px;
+}
+
+.green {
+	width:100%;
+    color: #fff !important;
+    border: solid 2px #55b748;
+    background: #66c556;
+    background: -webkit-gradient(linear, left top, left bottom, from(#66c556), to(#4aae3f));
+    background: -moz-linear-gradient(top,  #66c556,  #4aae3f);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#66c556', endColorstr='#4aae3f');
+}
+.green:hover {
+    border: solid 2px #8dcc39;
+    background: #a4d644;
+    background: -webkit-gradient(linear, left top, left bottom, from(#a4d644), to(#78c22e));
+    background: -moz-linear-gradient(top,  #a4d644,  #78c22e);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#a4d644', endColorstr='#78c22e');
+}
+.green:active {
+    color: #ccc;
+    border: solid 2px #5996c8;
+    background: -webkit-gradient(linear, left top, left bottom, from(#508bc2), to(#6fb0d6));
+    background: -moz-linear-gradient(top,  #508bc2,  #6fb0d6);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#508bc2', endColorstr='#6fb0d6');
+}
+.iconImage  span{
+    display: table;
+    height: 100%;
+    text-align: left;
+    vertical-align: middle;
+    width: 100%;
+}
+.iconImage  small{
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+.iconImage  img{
+   margin-bottom:0px!important;
+}
+.btnStyle{
+position:relative;text-align:right;margin-bottom:15px;
+}
+/***** End of Button Style *****/
+
+/***** Comment Links *****/
+#comments {
+	display: block;
+	margin-top: -0.8em;
+	margin-bottom: 1em;
+}
+#comment_link {
+	position: relative;
+	width: 290px;
+	height: 20px;
+	font-size: 1.2em;
+	margin: 0 auto;
+}
+#comment_link #add_comment {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#comment_link #view_comment {
+	position: absolute;
+	top:0;
+	left: 140px;
+	text-align: right;
+}
+/* End of Comment Links */
+
+
+/***** small screen (smart phone) styles *****/
+@media only screen and (max-width:480px) {
+  /*disable text sizing on orientation change*/
+  html, body, div, section, article, header, footer, nav, h1, h2, h3, h4, p, blockquote, span, em, strong, img, ol, ul, li, figure, video, th, td, tr {
+	  -webkit-text-size-adjust: none;
+      text-size-adjust: none;
+  }
+  
+  #wrapper {
+	  position: relative;
+	  width: 100%;
+	  max-width: 480px;
+	  margin: 0 auto;
+	  height: auto;
+  }
+  h1.courseTitle {
+	  width: 300px;
+	  font-size: 1.3em;
+	  font-weight: bold;
+	  color: #fff;
+	  margin-bottom: 0.5em;
+  }
+  #menuHolder {
+	  position: relative;
+	  width: 294px;
+	  height: 300px;
+	  margin: 0 auto;
+  }
+ 
+
+
+  h1.courseTitle {
+	  font-size: 1.2em;
+	  font-weight: bold;
+	  color: #fff;
+	  margin-bottom: 0.5em;
+  }
+  
+ 
+}
+
+
+/***** end of small screen (smart phone) styles *****/
+

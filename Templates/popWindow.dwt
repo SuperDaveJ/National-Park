@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="../styles/nps_pop.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Popup</title>
+<!-- TemplateEndEditable -->
+<script type="text/javascript" src="../scripts/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="../scripts/query_function.js"></script>
+<!-- TemplateBeginEditable name="head" -->
+<script type="text/javascript">
+  var popId = parseInt( $.getUrlVar('popId') );
+
+  var arrPopup = new Array();
+  var nTerm = 2;
+  for (var i=0; i<nTerm; i++) {
+	  arrPopup[i] = new Array(2);
+  }
+  
+  arrPopup[0][0] = "Maximum Continuous Horsepower (HP) and Revolutions per Minute (RPM)";
+  arrPopup[0][1] = "<ul><li>Operation above the maximum RPM is a restricted region and prolonged operation could lead to failure. (See SAIB NE-08-21)</li><li>Modifications to an engine that increase the power to the propeller above the maximum on the propeller TCDS have the potential to increase propeller stress and are not approved. These installations must be specifically approved.</li><li>The data sheet is a good source for this information but the data may not cover all installations. The data sheet may not have all of the restricted operating regions for all engine/aircraft and propeller installations. This may be found in the airplane flight manual.  This is generally the case for propellers on turbine engines and for twin-engine applications.</li></ul>";
+  
+  arrPopup[1][0] = "Diameter Or Limits for An Approved Range of diameter for Blades That Can Be Shortened";
+  arrPopup[1][1] = "<ul><li>The blade model may be listed as a group, such as: C8468-0 to C8468-1.</li><li>The dash number for most aluminum blades shows the amount of blade tip cutoff permitted to reduce the diameter.</li><li>	When 7 inches is cut off a C8468-0 blade it is re-stamped C8468-14.</li><li>	The propeller certification limits and loads change when a blade tip is cut. Therefore, the RPM and power for a cutoff group must be maintained.</li></ul>";
+  
+  $(document).ready(function(e) {
+	  $("h1.popTitle").html( arrPopup[popId-1][0] );
+	  $("#popText").html( arrPopup[popId-1][1] );
+  });
+</script>
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+
+<div id="contentArea">
+<!-- TemplateBeginEditable name="Content" -->
+
+	<h1 class="popTitle"></h1>
+    <div id="popText"></div>
+
+<!-- TemplateEndEditable -->
+</div>
+<div id="close">
+<a class="close" href="javascript:self.close();"><img src="../sysimages/close_0.png" onMouseOver="this.src='../sysimages/close_2.png'" onMouseOut="this.src='../sysimages/close_0.png'" onMouseDown="this.src='../sysimages/close_1.png'" alt="close" /></a>
+<p>&nbsp;</p>
+</div>
+
+</body>
+</html>

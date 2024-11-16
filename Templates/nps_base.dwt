@@ -1,0 +1,187 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<!-- TemplateInfo codeOutsideHTMLIsLocked="true" -->
+<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!-- Responsive and mobile friendly stuff -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+<link href="../styles/normalize.css" rel="stylesheet" media="screen, projection">
+<link href="../styles/nps_grid.css" rel="stylesheet" media="screen, projection">
+<link href="../styles/nps.css" rel="stylesheet" media="screen, projection">
+<!--[if lt IE 9]>
+<script src="../scripts/html5shiv-min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../scripts/APIWrapper.js"></script>
+<script type="text/javascript" src="../scripts/SCOFunctions.js"></script>
+<script type="text/javascript" src="../scripts/nps_scorm.js"></script>
+<script type="text/javascript" src="../scripts/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="../scripts/nps_content.js"></script>
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>NPS</title>
+<!-- TemplateEndEditable -->
+
+<!-- TemplateBeginEditable name="head" -->
+<script type="text/javascript">
+    nextURL = "01_02_003.html";
+    backURL = "01_02_001.html";
+	hasAudio = false;
+	
+	promptText = "Select Next to Continue.";
+	pgNumText = "Page # of ##";
+	
+</script>
+<!-- TemplateEndEditable -->
+
+</head>
+
+<body>
+<div id="wrapper">
+    
+<header id="pageHeader" role="banner">
+
+<!-- horizontal menu -->
+<div class="section group">
+  <div class="col span_3_of_6 takeUp6Col" style="margin:0;">
+  <nav id="mainNav_H" role="navigation" name="mainNav_H">
+    <div id="menuHolder_H">
+    <a id="courseMenu_H" class="menuItem_H" href="courseMenu.html" title="course menu">Menu</a>
+    <div id="bar1" class="divider">|</div>
+    <a id="resources_H" class="menuItem_H" href="resources.html" title="resources">Resources</a> 
+    <div id="bar2" class="divider">|</div>
+    <a id="exit_H" class="menuItem_H last-child" href="#" title="exit">Exit</a>
+    </div>
+  </nav>
+  </div>
+  
+  <div class="col span_3_of_6 takeUp6Col">
+  	<h1 class="courseTitle">Introduction to Housing Management</h1>
+  </div>
+</div>
+<!-- end of horizontal menu -->
+
+<!-- Next, Back, and Replay -->
+<div class="section group">
+  <div class="col span_3_of_6 takeUp6Col modTitle">
+  	<!-- TemplateBeginEditable name="ModuleTitle" -->
+  	<h2 class="lessonTitle">Module / Lesson Title Goes Here</h1>
+  	<!-- TemplateEndEditable -->
+  </div>
+  
+  <div class="col span_3_of_6 takeUp6Col arrowsBar">
+  <nav id="arrows" role="navigation">
+    <div id="arrowsHolder">
+    <a id="back" class="menuItem_H" href="#" title="back"><img id="imgBack" src="../sysimages/arrow_back.png" style="vertical-align:middle;" /> Back</a>
+    <div id="bar4" class="divider">|</div>
+    <a id="next" class="menuItem_H" href="#" title="next">Next <img id="imgNext" src="../sysimages/arrow_next.png" style="vertical-align:middle;" /></a>
+    </div>
+  </nav>
+  </div>
+</div>
+<!-- End of Next, Back, and Replay -->
+
+</header>
+
+<div id="contentArea">
+  <!-- Top prompt, bar -->
+    <div id="promptOnTop" class="section group">
+        <div class="col span_6_of_6">
+  			<p class="prompt">Select Next to Continue.</p>
+        </div>
+    </div>
+
+    <div class="section group">
+        <div class="col span_6_of_6" id="topBar">&nbsp;</div>
+    </div>
+
+
+<!-- page title and content start here -->
+<div class="section group">
+    <div class="col span_6_of_6">
+      <!-- TemplateBeginEditable name="PageTitle" -->
+      <h3 class="pageTitle">Page Title Goes Here</h3>
+      <!-- TemplateEndEditable -->
+      <div id="logo"><img src="../sysimages/logo_nps.png" alt="nps logo"/></div>
+    </div>
+</div>
+
+<!-- TemplateBeginEditable name="PageContent" -->
+<!-- 100% width -->
+<div class="section group">
+  <div class="col span_6_of_6">
+<p>It is important to note when working through the modules in this course that it is comprehensive in nature. Each module and page presented builds on the information presented in the previous module or page.</p>
+  </div>
+  <div class="col span_6_of_6">
+     <img class="content" src="images/10080.jpg" alt=""/>
+  </div>
+</div>
+
+<!-- side by side -->
+<div class="section group">
+  <div class="col span_3_of_6">
+<p>It is important to note when working through the modules in this course that it is comprehensive in nature. Each module and page presented builds on the information presented in the previous module or page.</p>
+  </div>
+  <div class="col span_3_of_6">
+   <img class="content" src="images/10120a.jpg" alt=""/>
+  </div>
+</div>
+<!-- TemplateEndEditable -->
+    
+
+  <!-- Bottom prompt, bar and page number -->
+    <div class="section group">
+        <div class="col span_6_of_6" id="bottomBar">&nbsp;</div>
+    </div>
+
+    <div id="promptOnBottom" class="section group">
+        <div class="col span_4_of_6">
+  			<p class="prompt">Select Next to Continue.</p>
+        </div>
+        <div class="col span_2_of_6">
+         	<p class="pgNum">Page 4 of 14</p>
+        </div>
+    </div>
+
+    <div id="pgNumMobile" class="section group">
+        <div class="col span_6_of_6"><p class="pgNum">Page 4 of 14</p></div>
+    </div>
+
+    <!-- Comment Tool -->
+    <div id="comments" class="section group">
+      <div class="col span_6_of_6">
+      
+        <div id="comment_link">
+          <div id="add_comment">
+          <a href="javascript:addComment()">Add Comment</a></div>
+          
+          <div id="view_comment">
+          <a href="javascript:viewComment()">View Comments</a></div>
+        </div>
+    
+      </div>
+    </div>
+    <!-- End of Comment Tool -->
+
+</div><!-- End of contentArea -->
+
+</div><!-- End of wrapper -->
+
+<script src="../scripts/imgSizer.js"></script>
+<script src="../scripts/modernizr.custom.2.6.2-min.js"></script>
+<script>
+Modernizr.load(
+{
+	// test for media query support, if not load respond.js
+    test : Modernizr.mq('only all'),
+    // If not, load the respond.js file
+    nope : '../scripts/respond.min.js' 
+}); 
+</script>
+</body>
+</html>

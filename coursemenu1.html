@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>NPS</title>
+<!-- Responsive and mobile friendly stuff -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+<link href="styles/normalize.css" rel="stylesheet" media="screen, projection">
+<link href="styles/nps_grid.css" rel="stylesheet" media="screen, projection">
+
+<link href="styles/nps_courseMenu.css" rel="stylesheet" media="screen, projection">
+<!--[if lt IE 9]>
+<script src="scripts/html5shiv.js"></script>
+<![endif]-->
+
+<script type="text/javascript" src="scripts/APIWrapper.js"></script>
+<script type="text/javascript" src="scripts/SCOFunctions.js"></script>
+<script type="text/javascript" src="scripts/nps_scorm.js"></script>
+<script type="text/javascript" src="scripts/jquery-1.7.1.min.js"></script>
+
+<script language="javascript" type="text/javascript">
+
+
+//alert("lessonStatus = " + parent.getModuleStatus(2));
+if ( inLMS == true ) {
+	var blnLastPage = false;
+	getSuspendData();
+  	closing = true;
+	window.onunload = callExitCourse;
+}
+
+function exitConfirm(){
+	if (confirm("Do you wish to exit the module?")==true) {
+		exitCourse(true);
+	}
+}
+
+function launchLesson(pgURL) {
+	closing = false;
+	window.location.href = pgURL;
+}
+
+$(document).ready(function() {
+ /* if (inLMS == true) {
+	for (var i=1; i<=nModules; ++i) {
+		if (getModuleStatus(i) == 1) {
+			$("#chk"+i).attr("src", "sysimages/check_clicked.png");
+		}
+	}
+  }*/
+});
+</script>
+<style type="text/css">
+#contentArea {
+	width:100%;	/* 960px at maximum size (1024px) */
+	height:640px;
+	margin: 0 auto;
+	background-color:#fff;
+	font-size: 1.0em; 
+	line-height: 1.4em;position: relative; 
+	color: #555;background:url('sysimages/bg_main.jpg');
+}
+.header{ height:120px; width:100%}
+.logo{ float:left; width:34%; padding-left:2%;}
+.heading_main{ font-size:22px; color:#161760; font-weight:bold;float:left; height:70px; margin-top:2%; padding:3% 0 0 2%;; width:62%;background:url('sysimages/heading_course.png') no-repeat;}
+.btn_main{ position:absolute; bottom:33px; left:40%;right:40%;}
+.complete{ 
+	bottom: 17px;
+    left: 45%;
+    position: absolute;
+    right: 50%;
+	color:#d60000;
+	font-weight:bold;
+
+	}
+@media only screen and (max-width:320px) { 
+.modTitle {
+padding-left: 5%!important;
+}
+.button_align1 {
+margin-left:4%!important;
+width:97%;
+}
+#exit {
+    margin: 2% 0 0 7%!important;
+}	
+}
+@media only screen and (max-width:768px) {
+.modTitle {
+padding-left: 0%!important;
+}
+.button_align1 {
+margin-left:5%!important;
+width:90%;
+}
+#exit {
+    margin: 2% 0 0 10%!important;
+}
+}
+@media only screen and (max-width:480px) { 
+.modTitle {padding-left:5% !important;}
+.button_align1 {
+margin-left:5%!important;
+width:90%;
+}
+#exit {
+    margin: 2% 0 0 14%!important;
+}	
+  }
+</style>
+</head>
+
+<body>
+
+<div id="wrapper">
+    
+
+
+<!-- end of horizontal menu -->
+
+
+<div id="contentArea" alt="Background image showing NPS employee houses in a park"  title="Background image showing NPS employee houses in a park" >
+<div class="header">
+<div class="logo"><img src="sysimages/nsp_logo.png" alt="NPS logo"  title="NPS logo"  /></div>
+<div class="heading_main" alt="NPS Business Principles and Practices Fundamentals" title="NPS Business Principles and Practices Fundamentals">NPS Business Principles and Practices Fundamentals</div>
+</div>
+<div class="btn_main">
+    <a shape="rect" coords="413,425,592,589" href="javascript:launchLesson('module1/nps010.html');" alt="Introduction to Housing Management" title="Introduction to Housing Management"><img src="sysimages/lesson_btn_visited.png"  alt="Background image showing NPS employee houses in a parkIntroduction to Housing Management"  title="Introduction to Housing Management" /></a>
+	
+	</div>
+	<div class="complete">Completed!</div>
+
+</div><!-- End of contentArea -->
+
+</div><!-- End of wrapper -->
+
+
+
+
+<script src="scripts/modernizr.custom.2.6.2-min.js"></script>
+<script>
+if ( $('html').is('.lt-ie8') && ($(window).width() <= 768) ) {
+  Modernizr.load(
+  {
+	  // test for media query support, if not load respond.js
+	  test : Modernizr.mq('only all'),
+	  // If not, load the respond.js file
+	  nope : 'scripts/respond.min.js' 
+  });
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+* { outline: none !important; }
+a, a:visited, a:hover, a:active { text-decoration: none; color: inherit; }
+
+ul.accordion *
+{
+	box-sizing: border-box !important;
+	-webkit-box-sizing: border-box !important;
+	-moz-box-sizing: border-box !important;
+	-ms-box-sizing: border-box !important;
+}
+
+ul.accordion {
+	list-style: none !important;
+	width: 90%;
+	padding: 0;
+	margin: 0 auto;
+}
+ul.accordion li { position: relative; }
+ul.accordion > li { margin-bottom: 3px; }
+ul.accordion > li:last-child { margin-bottom: 0; }
+
+ul.accordion > li div.name {
+	background: #2d5488 url(../sysimages/ap040700_0.png) repeat-x;
+	width: 100%;
+	height: 44px;
+	line-height: 44px;
+	color: #fff;
+	font-weight: bold;
+	padding-left: 40px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+	display: inline-block;
+	/*behavior: url(../styles/PIE.htc); -- this causes problems */
+}
+
+ul.accordion > li div.name:hover {
+	background: #46aa3b url(../sysimages/ap040700_2.png) repeat-x;
+	cursor: pointer;
+}
+
+ul.accordion > li div.hand-icon {
+	position: absolute;
+	background-image:url(../sysimages/hand_icon.png);
+	top: 9px;
+	right: 9px;
+	display: inline-block;
+	float: right;
+	width: 25px;
+	height: 26px;
+	cursor: pointer;
+}
+
+ul.accordion > li div.plus {
+	position: absolute;
+	background-image:url(../sysimages/more.png);
+	top: 6px;
+	left: 6px;
+	display: inline-block;
+	float: left;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+}
+
+ul.accordion > li div.minus {
+	position: absolute;
+	background-image:url(../sysimages/less.png);
+	top: 6px;
+	left: 6px;
+	display: inline-block;
+	float: left;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+}
+
+ul.accordion > li.open div.name {
+	/* background color below is the color to change when it's open */
+	background: #46aa3b url(../sysimages/ap040700_2.png) repeat-x;
+	color: #fff;
+}
+
+ul.accordion > li.open div.name:hover {
+	/* hover when open */
+	background: #2d5488 url(../sysimages/ap040700_0.png) repeat-x;
+	cursor: pointer;
+}
+
+ul.accordion > li > ul, ul.accordion > li.open > ul {
+	list-style: none !important;
+	padding: 0;
+	margin: 0 1%;
+}
+
+@media only screen and (max-width:640px) {
+  ul.accordion > li div.name {
+	  background: #2d5488 url(../sysimages/ap040700_0.png) repeat-x;
+	  width: 100%;
+	  height: 44px;
+	  line-height: 16px;
+	  color: #fff;
+	  font-weight: bold;
+	  padding-left: 40px;
+	  -webkit-border-radius: 5px;
+	  -moz-border-radius: 5px;
+	  -ms-border-radius: 5px;
+	  border-radius: 5px;
+	  display: table;
+  }
+  span.acTitle {
+	  display: table-cell;
+	  vertical-align: middle;
+	  padding-right: 40px;
+  }
+  
+  ul.accordion > li div.name:hover {
+	  background: #46aa3b url(../sysimages/ap040700_2.png) repeat-x;
+	  cursor: pointer;
+  }
+  
+  ul.accordion > li div.hand-icon {
+	  position: absolute;
+	  background-image:url(../sysimages/hand_icon.png);
+	  top: 9px;
+	  right: 9px;
+	  display: inline-block;
+	  float: right;
+	  width: 25px;
+	  height: 26px;
+	  cursor: pointer;
+  }
+  
+  ul.accordion > li div.plus {
+	  position: absolute;
+	  background-image:url(../sysimages/more.png);
+	  top: 6px;
+	  left: 5px;
+	  display: inline-block;
+	  float: left;
+	  width: 32px;
+	  height: 32px;
+	  cursor: pointer;
+  }
+  
+  ul.accordion > li div.minus {
+	  position: absolute;
+	  background-image:url(../sysimages/less.png);
+	  top: 6px;
+	  left: 5px;
+	  display: inline-block;
+	  float: left;
+	  width: 32px;
+	  height: 32px;
+	  cursor: pointer;
+  }
+  
+  ul.accordion > li.open div.name {
+	  /* background color below is the color to change when it's open */
+	  background: #46aa3b url(../sysimages/ap040700_2.png) repeat-x;
+	  color: #fff;
+  }
+  
+  ul.accordion > li.open div.name:hover {
+	  /* hover when open */
+	  background: #2d5488 url(../sysimages/ap040700_0.png) repeat-x;
+	  cursor: pointer;
+  }
+}

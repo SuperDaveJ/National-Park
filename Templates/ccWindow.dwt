@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="../styles/nps_pop.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+<title>Audio Transcript</title>
+
+<!-- TemplateBeginEditable name="head" -->
+<script type="text/javascript">
+
+</script>
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+
+<div id="contentArea">
+<h1 class="popTitle">Audio Transcript</h1>
+
+<div id="popText">
+<!-- TemplateBeginEditable name="Content" -->
+  <p>It is important to note when working through the modules in this course that it is comprehensive in nature. Each module and page presented builds on the information presented in the previous module or page.</p>
+  
+  <ul>
+  	<li>It is important to note when working through</li>
+  	<li>Each module and page presented builds on the information</li>
+  	<li>Welcome to the Fraud Detection and National Security Data System (FDNS-DS) Web-based training.</li>
+  </ul>
+  
+  <p>It is important to note when working through the modules in this course that it is comprehensive in nature.</p>
+
+<!-- TemplateEndEditable -->
+
+</div><!-- End of popText -->
+
+</div><!-- End of contentArea -->
+  
+<div id="close">
+<a href="javascript:self.close();"><img src="../sysimages/close_0.png" onMouseOver="this.src='../sysimages/close_2.png'" onMouseOut="this.src='../sysimages/close_0.png'" onMouseDown="this.src='../sysimages/close_1.png'" alt="close" /></a>
+<p>&nbsp;</p>
+</div>
+
+</body>
+</html>

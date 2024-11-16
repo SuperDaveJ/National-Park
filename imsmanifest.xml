@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<manifest identifier="NPS" version="1.0"
+	xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2"
+	xmlns:imsmd = "http://www.imsglobal.org/xsd/imsmd_v1p2" 
+	xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd
+						http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd
+						http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+
+<metadata>
+   <schema>ADL SCORM</schema>
+   <schemaversion>1.2</schemaversion>
+   <imsmd:lom> 
+      <imsmd:general> 
+         <imsmd:title> 
+            <imsmd:langstring lang = "en_US">Introduction to Housing Management</imsmd:langstring> 
+         </imsmd:title> 
+         <imsmd:description> 
+            <imsmd:langstring Lang = "en_US">
+               In this course, you will be learning about NPS Business Principles and Practices Fundamentals
+            </imsmd:langstring> 
+          </imsmd:description> 
+          <imsmd:keywords> 
+            <imsmd:langstring Lang = "en_US">NPS</imsmd:langstring>
+            <imsmd:langstring Lang = "en_US">Introduction </imsmd:langstring>
+            <imsmd:langstring Lang = "en_US">Web-based Training</imsmd:langstring>
+          </imsmd:keywords> 
+      </imsmd:general> 
+   </imsmd:lom> 
+</metadata>
+
+<organizations default = "NPS_IHM">
+  <organization identifier = "NPS_IHM">
+	 <title><![CDATA[Introduction to Housing Management]]></title>
+	 <item identifier ="NPS" identifierref ="NPS_ref" isvisible = "true">
+		  <title><![CDATA[Introduction to Housing Management]]></title>
+	 </item>
+  </organization>
+</organizations>
+
+<resources>
+  <resource identifier ="Contracting_ref" type = "webcontent" adlcp:scormtype ="sco" href="index.html">
+	<file href = "index.html"/>
+	<file href = "coursemenu.html"/>
+	<file href = "module1/nps010.html"/>
+	<file href = "scripts/APIWrapper.js"/>
+	<file href = "scripts/SCOFunctions.js"/>
+	<file href = "scripts/jquery-1.7.1.min.js"/>
+	<file href = "scripts/nps_scorm.js"/>
+	<file href = "scripts/nps_content.js"/>
+  </resource>
+</resources>
+
+</manifest>
+

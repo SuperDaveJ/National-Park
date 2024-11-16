@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Get Comments</title>
+<style type="text/css">
+body {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #FFFFFF;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: #000000;
+}
+
+#container {
+	width: 400px;
+	background: #FFFFFF;
+	margin: 0 auto;
+	border: 1px solid #FFFFFF;
+	text-align: left;
+}
+
+h1 {
+	font-size:20px;
+	font-weight:bold;
+	text-align:center;
+}
+p.mod {
+	margin: 15px 0 0 20px;
+	padding:0;
+	font-size:16px;
+	font-weight:bold;
+}
+
+p.lesson {
+	margin: 0 0 0 60px;
+	padding: 8px 0;
+	font-size:13px;
+	font-weight:normal;
+}
+
+</style>
+
+<script language="javascript">
+var vpPath = "http://prod.c2ti.com/CommentTool/";	//path to Virtual Pilot site
+var cID = "nps"
+
+function getComments(mID) {
+	if ( mID === 0 ) {
+		//whole course comments
+		viewWin = window.open(vpPath + 'getAWholeCourseComments.asp?cID='+cID, "Comments", "width=960,height=800,scrollbars=yes,resizable=yes");
+	} else {
+		//single lesson comments
+		viewWin = window.open(vpPath + 'getAWholeLessonComments.asp?cID='+cID+'&mID='+mID, "Comments", "width=960,height=800,scrollbars=yes,resizable=yes");
+	}
+}
+</script>
+
+</head>
+
+<body>
+
+<div id="container">
+<p>&nbsp;</p>
+
+<h1>NPS</h1>
+<p>&nbsp;</p>
+
+
+<p class="mod">NPS</p>
+<br />
+
+<!--
+<p class="lesson"><a href="javascript:getComments(1)">Lesson 1. Introduction to IPAWS</a></p>
+<p class="lesson"><a href="javascript:getComments(2)">Lesson 2. Appropriate, Effective, and Accessible Alert and Warning Messages</a></p>
+<p class="lesson"><a href="javascript:getComments(3)">Lesson 3. Common Alerting Protocol Message Composition</a></p>
+-->
+<p class="lesson"><a href="javascript:getComments(0)">Get all comments of the course.</a></p>
+<p class="lesson"><a href="javascript:getComments(1)">Get all comments of module 1.</a></p>
+<p class="lesson"><a href="javascript:getComments(2)">Get all comments of module 2.</a></p>
+<p class="lesson"><a href="javascript:getComments(3)">Get all comments of module 3.</a></p>
+<p class="lesson"><a href="javascript:getComments(4)">Get all comments of module 4.</a></p>
+<p class="lesson"><a href="javascript:getComments(5)">Get all comments of module 5.</a></p>
+
+<p>&nbsp;</p>
+
+</div>
+
+</body>
+</html>

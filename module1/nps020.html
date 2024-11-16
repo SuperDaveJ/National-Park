@@ -1,0 +1,342 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"><!-- InstanceBegin template="/Templates/nps_base.dwt" codeOutsideHTMLIsLocked="true" --> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+
+<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!-- Responsive and mobile friendly stuff -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+<link href="../styles/normalize.css" rel="stylesheet" media="screen, projection">
+<link href="../styles/nps_grid.css" rel="stylesheet" media="screen, projection">
+<link href="../styles/nps.css" rel="stylesheet" media="screen, projection">
+<link href="../styles/jplayer_nps.css" rel="stylesheet" type="text/css" />
+<!--[if lt IE 9]>
+<script src="../scripts/html5shiv-min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../scripts/APIWrapper.js"></script>
+<script type="text/javascript" src="../scripts/SCOFunctions.js"></script>
+<script type="text/javascript" src="../scripts/nps_scorm.js"></script>
+<script type="text/javascript" src="../scripts/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="../scripts/jquery.jplayer.js"></script>
+<script type="text/javascript" src="../scripts/nps_content.js"></script>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>NPS</title>
+<!-- InstanceEndEditable -->
+
+<!-- InstanceBeginEditable name="head" -->
+<script type="text/javascript">
+    nextURL = "nps030.html";
+    backURL = "nps010.html";
+	
+	promptText = "Select each tab; then select Next to continue.";
+	pgNumText = "Page 2 of 5";
+	
+var totaltopic = 5;
+var currnum;
+function showblock(page) {
+		if(currnum!=page){
+		for (i=1; i<=totaltopic; i++) {
+		$("#img"+i).css("cursor","pointer");
+		var e= eval("document.getElementById('para"+i+"')");
+		var g;
+		
+		e.style.display="none";
+			if (i>1) {
+				g= eval("document.getElementById('img"+i+"')");
+				g.src = "assets/tab050"+(i-1)+"_0.jpg" 
+			}
+		}
+		e = eval("document.getElementById('para"+page+"')"); 
+		var g;
+		g = eval("document.getElementById('img"+page+"')");
+			if (e){
+				document.getElementById('boxID').style.display="block";
+			if (g) g.src = "assets/tab050"+(page-1)+"_2.jpg"
+			$("#img"+page).css("cursor","default");
+		$('#para'+page).slideDown(1000)
+			}
+		currnum=page;
+		}
+}
+	
+</script>
+<style>
+#para1, #para2, #para3, #para4 {
+	font-size: 14px;
+}
+
+.box_main p {
+	padding: 0px 10px 10px 10px;
+}\
+.heading h4{margin-top:0px !important; margin-bottom:0px !important;background:#cc0000;}
+.box_1 {
+	background-color: #fef28b;
+	height: 40px;
+	line-height: 35px;
+	padding-left: 10px;
+	font-size: 16px;font-weight:bold;
+}
+.box_main {
+	width: 90%;
+	background: url("images/nps010200a.jpg") no-repeat scroll center top;
+	margin: auto;
+}
+.text_rote {
+	width: 200px;
+	height: 24px;
+	line-height: 24px;
+	margin: 5px 0 2px 35px;
+	padding-left: 10px;
+	background-color: #fef28b;
+}
+.clearfix {
+	clear: both;
+}
+.text_rote a:hover {
+	color: #cc0000; 
+}
+.box_left a{width: 200px;
+	height: 24px; display:inline-block;}
+
+.box_left {
+	background: url("images/nps010200b.png") no-repeat;
+	background-position: bottom;
+	float: left;
+	 height: 190px;
+		padding-top: 95px; 
+	width: 322px; 
+}
+.box {
+	width:60%;
+	height: 340px;
+	background: #FFF;
+	margin: 0px auto;
+	float: left;
+}
+.table1 tr td {
+	text-align: center;
+	margin: 0px;
+	padding: 5px;
+}
+.table2 tr td {
+	text-align: center;
+	margin: 0px;
+	padding: 5px;
+}
+.innerdiv {
+	overflow: auto;
+	height: 290px;
+}
+</style>
+<!-- InstanceEndEditable -->
+
+</head>
+
+<body>
+<div id="wrapper">
+    
+<!-- horizontal menu -->
+<div class="section group menu_bg" >
+  <div class="col span_4_of_6 takeUp6Col" style=""><header id="pageHeader" role="banner">
+  <nav id="mainNav_H" role="navigation" name="mainNav_H">
+    <div id="menuHolder_H">
+    <a id="courseMenu_H" class="menuItem_H" href="courseMenu.html" title="Main Menu" alt="Main Menu" tabindex="1">Menu</a>
+    <div id="bar1" class="divider">|</div>
+    <a id="help_H" class="menuItem_H" href="#" title="Help" tabindex="2">Help</a> 
+	 <div id="bar2" class="divider">|</div>
+    <a id="resources_H" class="menuItem_H" href="resources.html" title="Resources" tabindex="3">Resources</a> 
+    <div id="bar3" class="divider">|</div>
+	 <a id="glossary_H" class="menuItem_H" href="#" title="Glossary" tabindex="4">Glossary</a> 
+    <div id="bar5" class="divider">|</div>
+    <a id="exit_H" class="menuItem_H last-child" href="#" title="Exit" tabindex="5">Exit</a>
+    </div>
+  </nav>
+  </div>
+  <!-- Next, Back, and Replay -->
+   <div class="col span_2_of_6 takeUp6Col arrowsBar">
+  <nav id="arrows" role="navigation">
+    <div id="arrowsHolder">
+    <a id="back" class="menuItem_H" href="#" title="Back" tabindex="25"><img id="imgBack" src="../sysimages/arrow_back.png" style="vertical-align:middle;" /> Back</a>
+    <div id="bar4" class="divider">|</div>
+    <a id="next" class="menuItem_H" href="#" title="Next" tabindex="26">Next <img id="imgNext" src="../sysimages/arrow_next.png" style="vertical-align:middle;" /></a>
+    </div></header>
+  </nav>
+  </div>
+ <!-- End of Next, Back, and Replay -->
+</div>
+
+<!-- end of horizontal menu -->
+
+<!-- page title and content start here -->
+<div id="contentArea">
+
+  
+  <div class="section group " >
+  <div class="header_left">
+<h1 class="courseTitle">NPS Business Principles and Practices Fundamentals</h1>
+  	<h2 class="lessonTitle">Lesson 1: Introduction to Housing Management</h2>
+  </div>
+  <div class="header_right"><img src="../sysimages/logonps.png" alt="NPS Logo" title="NPS Logo"/></div>
+  </div>
+    <div class="section group">
+  <div class="content_left">
+    <!-- Top  page number -->
+
+    <div class="section group" >
+	 <div class="col span_4_of_6 heading" >
+	  <h4>Housing Policies, Regulations and Guidelines</h4>
+	</div>
+  <div class="col span_2_of_6">
+         	<p class="pgNum">Page 1 of 14</p>
+        </div></div>
+<!-- InstanceBeginEditable name="PageContent" -->
+<div class="section group">
+  <div class="col span_6_of_6" style="height:410px;">
+ 
+<p>The NPS follows policies, regulations and guidelines for administering and managing employee housing. Select each tab below to learn more.</p>
+
+        <div class="box_main">
+          <div class="box_left" alt="File folder containing four files." title="File folder containing four files.">
+            <div class="text_rote">
+			<a href="javascript:showblock(2);" style="text-decoration:none;" tabindex="6" alt="Director's Order 36" id="img2" title="Director's Order 36 ">
+			Director's Order 36</a>
+			</div>
+            <div class="text_rote">
+			<a href="javascript:showblock(3);" style="text-decoration:none;" tabindex="11" alt="Reference Manual 36" title="Reference Manual 36" id="img3">
+			Reference Manual 36</a> </div>
+            <div class="text_rote">
+			<a href="javascript:showblock(4);" style="text-decoration:none;" tabindex="15" id="img4" alt="OMB Circular A-45" title="OMB Circular A-45" name="img4" >
+			OMB Circular A-45</a></div>
+			<div class="text_rote">
+           <a href="javascript:showblock(5);" style="text-decoration:none;" tabindex="20" alt="Housing Management Plan" title="Housing Management Plan" name="img5"  id="img5">
+		  Housing Management Plan</a></div>
+          </div>
+          <div class="box" id="boxID" style="display:none;">
+            <div id="para1" style="display:block;border:0;font:inherit;vertical-align:middle;margin:0;padding:0px 0 0 0;" > </div>
+            <div id="para2" style="display: none;" tabindex="7" >
+              <div class="box_1">Director's Order 36</div>
+              <div class="innerdiv" tabindex="8">
+                <p>Director's Order 36 Housing Management and Reference Manual provides guidance for administering and managing NPS employee housing (also known as Government furnished quarters).</p>
+            <ul tabindex="9">
+              <li>The policies and procedures apply to all NPS-owned or leased housing units rented in support of Federal programs--whether rented to employees of the NPS, employees of another Interior bureau, another Federal agency, or to non-Federal tenants who are housed in order to accomplish the mission of NPS.</li>
+              <li>Select this link for more information on this Order:<br><a href="http://inside.nps.gov/waso/custommenu.cfm?lv=3&prg=154&id=6028" target="_blank" tabindex="10">http://inside.nps.gov/waso/custommenu.cfm?lv=3&prg=154&id=6028</a></li>
+            </ul>
+           </div>
+            </div>
+            <div id="para3" style="display:none;" tabindex="12">
+              <div class="box_1">Reference Manual 36</div>
+                 <div class="innerdiv" tabindex="13">
+                 <p>Reference Manual 36 addresses both the administrative and facility-management aspects of the Housing Management Program, and provides parks/offices with the following:</p>
+            <ul tabindex="14">
+              <li>Overview of regulations for acquiring, utilizing, managing, and disposing of government-furnished housing</li>
+              <li>Regulations for establishing and collecting rental rates and charges for related facilities </li>
+			  <li>Guide for the implementation of the Housing Management Program</li>
+			  <li>Quick reference guide for specific topics related to the Housing Management Program </li>
+			  <li>Tool that offers the best practices to determine the most cost-effective and efficient use of structures</li>
+            </ul>
+			</div>
+			  </div>
+			  
+              <div id="para4" style="display:none; " tabindex="16">
+                <div class="box_1">OMB Circular A-45</div>
+                <div class="innerdiv" tabindex="17">
+                  <p>OMB Circular A-45 - Rental & Construction of Government Quarters:</p>
+            <ul tabindex="18">
+              <li>Establishes rental rates and other charges for Government Quarters</li>
+              <li>Rents are based upon rents in area</li>
+			  <li>Uses Appraisals and Regional Surveys</li>
+			  <li>Considers other costs - utilities, furnishings and other services</li>
+			  <li>Considers "Other Factors":</li>
+			  <ul>
+			  <li>Isolation</li>
+			  <li>Site amenities</li>
+			  <li>Lack of Privacy</li>
+			  </ul>
+			  <li>Establishes procedures for construction </li>
+			  <li>Used by all executive Agencies</li>
+			  <li>Select this link for more information on this Circular: <a href="http://www.whitehouse.gov/omb/circulars_a045" tabindex="19" target="_blank">http://www.whitehouse.gov/omb/circulars_a045</a></li>
+            </ul>
+                </div>
+             </div>
+            <div id="para5" style="display: none;" tabindex="21">
+              <div class="box_1">Housing Management Plan</div>
+              <div class="innerdiv" tabindex="22">
+               <p>The Housing Management Plan (HMP) serves as a park's housing framework and strategy to guide the park's housing program over the next five years. Parks have strived to make improvements in housing management and will continue to progress utilizing the information and plans laid out in the HMP.</p>
+			   <ul tabindex="23">
+			   <li>This plan covers the following critical components of housing management :</li>
+			   <ul>
+			  <li>Inventory: Determined by the park's Housing Needs Assessment</li>
+			  <li>Required Occupancy If applicable</li>
+			  <li>Cost to Operate</li>
+			  <li>Condition </li>
+			  </ul>
+			  <li>Guidance regarding tenant responsibilities and expectations as park housing occupants.</li>
+			  <li>HMPs will reference numerous existing park sources of information:</li>
+			  <ul>
+			  <li>General Management Plan (GMP)</li>
+			  <li>Business Plan </li>
+			  <li>Needs Assessment Certification</li>
+			  <li>Park Asset Management Plan (PAMP) </li>
+			  <li>budget data from Housing Income and Expenditure Reports</li>
+			  <li>Facility Management Software System (FMSS) data</li>
+			  <li>iQMIS data </li>
+			  <li>Policy documents such as the Director's Order 36 and Reference Manual 36. </li>
+			  </ul>
+			  <li>HMPs are meant to be managed and updated to reflect changing park conditions and inventory to ensure most efficient and effective management of critical housing resources.</li>
+			  <li>Select this link for more information on NPS Washington Office (WASO) Housing Management Site:<br> <a href="http://inside.nps.gov/waso/waso.cfm?prg=154&lv=3" tabindex="24" target="_blank">http://inside.nps.gov/waso/waso.cfm?prg=154&lv=3</a></li>
+			   </ul>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+  </div>
+  <!-- Bottom prompt -->
+  
+    <div id="promptOnBottom" class="section group">
+        <div class="span_6_of_6">
+  			<p class="prompt">Select Next to Continue.</p>
+        </div>
+       
+    </div>
+</div>
+
+<!-- InstanceEndEditable -->
+    
+
+  </div>
+  <div class="content_right"></div>
+  </div>
+  
+
+
+<!-- 100% width -->
+
+  
+
+
+
+</div><!-- End of contentArea -->
+
+</div><!-- End of wrapper -->
+
+
+<script src="../scripts/imgSizer.js"></script>
+<script src="../scripts/modernizr.custom.2.6.2-min.js"></script>
+<script>
+Modernizr.load(
+{
+	// test for media query support, if not load respond.js
+    test : Modernizr.mq('only all'),
+    // If not, load the respond.js file
+    nope : '../scripts/respond.min.js' 
+}); 
+</script>
+</body>
+<!-- InstanceEnd --></html>
